@@ -1,16 +1,21 @@
+/*
 import React, {useState, useEffect} from 'react'
-import firebaseApp from './firebase'
-import './App.css'
-import Login from './components/login'
-import Hero from './components/hero'
+import firebaseApp from '../firebase'
+import '../App.css'
+import LoginComponent from '../components/LoginComponent'
+//import Hero from '../components/hero'
+import Home from  './Home.js';
 
-const App = () => {
-  const [user, setUser] = useState('')
+
+
+const Login = () => {
+  const [user, setUser] = useState(false)
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [emailError, setEmailError] = useState('')
   const [passwordError, setPasswordError] = useState('')
   const [hasAccount, setHasAccount] = useState(false)
+
 
   const clearInput = () =>{
     setEmail('');
@@ -38,9 +43,10 @@ const App = () => {
         setPasswordError(err.message);
         break;
       default:
-        console.log('Email ans password are correct')
+        console.log('Email ans password are correct')  
      }
    })
+  
  }
 
  const handleSignup = () => {
@@ -71,10 +77,10 @@ const App = () => {
    firebaseApp.auth().onAuthStateChanged((user) => {
      if(user){
        clearInput();
-       setUser(user);
+       setUser(true);
      }
      else{
-       setUser("");
+       setUser(false);
      }
    })
  }
@@ -87,8 +93,8 @@ const App = () => {
   return (
     <div className="App">
     {user ?
-     ( <Hero handleLogout={handleLogout}/>) :(
-      <Login email={email} setEmail={setEmail} password={password} setPassword={setPassword} handleLogin={handleLogin} handleSignup={handleSignup} hasAccount={hasAccount} setHasAccount={setHasAccount}
+     ( <Home handleLogout={handleLogout} isLogin={user} />) :(
+      <LoginComponent email={email} setEmail={setEmail} password={password} setPassword={setPassword} handleLogin={handleLogin} handleSignup={handleSignup} hasAccount={hasAccount} setHasAccount={setHasAccount}
       emailError={emailError} passwordError={passwordError} />
     )
     }
@@ -96,4 +102,25 @@ const App = () => {
   );
 }
 
-export default App;
+export default Login;
+
+
+import React from 'react'
+import '../App.css'
+import Registration from '../components/Registration'
+
+
+
+const Login = () => {
+
+  return (
+    <div className="App">
+  
+      <Registration />
+  
+    </div>
+  );
+}
+
+export default Login;
+*/

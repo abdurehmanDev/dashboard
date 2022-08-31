@@ -1,7 +1,6 @@
 import React from 'react';
-import {FiHome, FiUser, FiMessageSquare} from 'react-icons/fi';
-import {AiOutlineCalendar, AiOutlineFolder} from 'react-icons/ai';
-import {GrDocumentText} from 'react-icons/gr';
+import { FiHome, FiUser, FiMessageSquare, FiSettings } from 'react-icons/fi';
+import { AiOutlineCalendar, AiOutlineFolder, AiOutlineFile } from 'react-icons/ai';
 
 
 export const SidebarData = [
@@ -22,7 +21,7 @@ export const SidebarData = [
   },
   {
     path: '/documents',
-    icon: <GrDocumentText/>,
+    icon: <AiOutlineFile />,
     cName: 'nav-text'
   },
   {
@@ -32,7 +31,12 @@ export const SidebarData = [
   },
   {
     path: '/message',
-    icon: <FiMessageSquare/>,
+    icon: <FiMessageSquare />,
+    cName: 'nav-text'
+  },
+  {
+    path: '/setting',
+    icon: <FiSettings />,
     cName: 'nav-text'
   }
 ];

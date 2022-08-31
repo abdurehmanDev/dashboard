@@ -1,0 +1,50 @@
+.page-left {
+    margin-left: 168px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-right: 22px;
+}
+
+.page-normal {
+    margin-left: 140px;
+    margin-top: 0px;
+    margin-right: 22px;
+}
+
+.cont-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-between;
+}
+
+.col-item1 {
+    width: 68%;
+    margin-bottom: 24px;
+}
+
+.col-item2 {
+    width: 30%;
+}
+
+.hero .hero__nav {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__nav h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero .hero__heading {
+    color: #fff;
+}
+
+.hero .hero__button {
+    width: 86px;
+    padding: 8px 0;
+    background: #3a2b58;
+}

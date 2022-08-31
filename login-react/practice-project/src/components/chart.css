@@ -1,0 +1,16 @@
+.contains {
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.drop {
+    border-style: none;
+    margin-right: 14px;
+    color: gray;
+}
+
+.chart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

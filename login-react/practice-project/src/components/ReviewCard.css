@@ -1,0 +1,65 @@
+.review-card {
+    display: flex;
+    width: 80%;
+    background-color: #ffad31;
+    border-radius: 12px;
+}
+
+.review-icon {
+    padding: 24px;
+    background-color: #ffc431;
+    border-radius: 12px;
+    font-size: 38px;
+}
+
+.cont {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.review-area {
+    margin-bottom: 16px;
+    margin-left: 12px;
+}
+
+.icon {
+    margin: 34px;
+    color: white;
+}
+
+.link-tag {
+    text-decoration: none;
+}
+
+.rating-num {
+    border: 1px solid white;
+    padding: 6px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 8px;
+    margin-left: 12px;
+    margin-right: 6px;
+    color: white;
+}
+
+.total-mem {
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    margin-left: 4px;
+}
+
+.rate-label {
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    margin-left: 4px;
+}
+
+.twoStar-icon {
+    background-color: #ff6767;
+}
+
+.twoStar-cont {
+    background-color: #f24d57;
+}
